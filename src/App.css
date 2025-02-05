@@ -1,50 +1,62 @@
+/* ======= Global Styles ======= */
 body {
+    font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
   }
+  
+  /* ======= Navbar Styles ======= */
+  .navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Active Link Highlight */
+  .navbar-nav .nav-link.active {
+    color: #f8b400 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #f8b400;
+  }
+  
+  /* ======= Page Container ======= */
   .container {
     padding: 20px;
   }
-  .card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: none;
+  
+  /* ======= Page Content ======= */
+  .page-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
     border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .card-body {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 15px;
   }
   
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+  /* ======= User Page Card ======= */
+  .user-card {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
-  .card-text {
-    font-size: 1rem;
-    color: #666;
-  }
-  .form-select {
-    max-width: 300px;
-    margin-bottom: 15px;
-  }
-  .search-box {
-    max-width: 400px;
-    margin-bottom: 20px;
-  }
+  
   
